@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin: 0;
+        }
+        header {
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #logoSMI{
+            width: 10%;
+        }
+        #logointerreg{
+            width: 10%;
+        }
+        #langue_base{
+            margin-right: 5%;
+        }
+        .principal{
+            background: #18BED1;
+            color: white;
+            padding-top: 0.2%;
+            padding-bottom: 15px;
+        }
+        H1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1%;
+        }
+        .drapeau{
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            padding: 20px;
+        }
+        #drapeau{
+            margin-right: 1%;
+        }
+        footer{
+            margin-bottom: 0%;
+        }
+        .bouton{
+            padding: 7%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        input{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: xx-large;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background: #1AB6F0;
+            border: solid black 0.5px;
+            border-radius: 30px;
+            color: white;
+            box-shadow: 5px 10px 5px black;
+        }
+        input:hover{
+         background-color: skyblue;
+         box-shadow: none;
+         transition : 0.2s;
+        }
+        .fond{
+            background-image: url(../img/1297703094759203911bLUE-footer.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover ;
+            background-color: black;
+            margin-top: 0;
+        }
+    </style>
+    <title>Site SMI</title>
+</head>
+<body>
+    <header>
+        <img src="img/logo_Interreg.png" alt="Logo_Interreg" id="logoInterreg">
+        <img src="img/Logo SMI couleur.png" alt="Logo_SMI" id="logoSMI">
+        <select name="langue" id="langue_base">
+            <option value="">Francais</option>
+            <option value="ang">Anglais</option>
+            <option value="all">Allemand</option>
+        </select>
+    </header>
+    <div class="principal">
+        <div class="fond"><H1>Votre participation à la réduction des consommations d'énergie<br>
+            est essentielle pour limiter les impacts sur l'environnement</H1>
+            <div class="drapeau">
+                <img src="img/Drapeau-FEDER-Seul.png" alt="Drapeau-FEDER" id="drapeau">
+                <p>Fonds européen de développement régional
+                    (FEDER)<br>
+                    Europäischer Fonds für regionale Entwicklung
+                    (EFRE)</p></div>
+            </div>
+    </div>
+    <div class="bouton">
+        <input type="button" value="Connexion" onclick="goAuth()">
+    </div>
+    <footer>
+        <svg version="1.1"
+        id="svg3600" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:svg="http://www.w3.org/2000/svg"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1531 158.5"
+        style="enable-background:new 0 0 1531 158.5;" xml:space="preserve">
+   <style type="text/css">
+       .st0{fill:#23B2E6;}
+       .st1{fill:none;}
+       .st2{fill:#ABD8F0;}
+   </style>
+  
+   <g id="layer1" transform="translate(-11.071424,-793.79801)" inkscape:groupmode="layer" inkscape:label="Layer 1">
+       <path id="path3612" sodipodi:nodetypes="ccaccccc" class="st0" d="M14.1,811.1c0,0,311.1,83.3,537.4,68.6
+           c231.3-7.6,431.2-78.8,649.4-85.2c114-3.3,341.4,24.6,341.4,24.6l1.1,54.5l-1.8,77.4l-1530,0.8L14.1,811.1L14.1,811.1z"/>
+       
+           <path id="path3620" inkscape:connection-end="#path3612" inkscape:connection-start="#path3612" inkscape:connector-type="polyline" class="st1" d="
+           M776.6,873L776.6,873"/>
+       <path id="path4172" sodipodi:nodetypes="ccaccccc" class="st2" d="M14,843c0,0,309.1,54.5,535.3,43.2
+           c231.4-5.9,433.6-53.1,651.6-56c114.5-1.5,342.9,20.5,342.9,20.5l1.1,38.2l-3.2,62.4L11.5,951.8L14,843L14,843z"/>
+   </g>
+   </svg>
+</footer>
+<script>
+    function goAuth()
+{
+document.location.href="Connexion.HTML";
+}
+</script>
+</body>
+
+</html>

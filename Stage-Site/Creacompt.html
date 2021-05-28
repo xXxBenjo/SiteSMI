@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+    }
+
+    header {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logoSMI {
+        width: 10%;
+    }
+
+    #logointerreg {
+        width: 10%;
+    }
+
+    #langue_base {
+        margin-right: 5%;
+    }
+
+    .general {
+        background: linear-gradient(to right, #18BED1 25%, #CCE9EC 25% 75%, #18BED1 75%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #363535;
+        font-size: 15pt;
+    }
+
+    .valider {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: xx-large;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background: #1AB6F0;
+        border: solid black 0.5px;
+        border-radius: 30px;
+        color: white;
+        box-shadow: 5px 10px 5px black;
+        margin-bottom: 5%;
+    }
+
+    .valider:hover {
+        background-color: skyblue;
+        box-shadow: none;
+        transition: 0.2s;
+    }
+
+    .Ecrire {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: solid 1px;
+        background-color: #CCE9EC;
+        box-shadow: none;
+        border-radius: 0%;
+        font-size: 15pt;
+        color: #363535;
+        box-shadow: none;
+    }
+
+    .Ecrire:hover {
+        background-color: #CCE9EC;
+        box-shadow: none;
+    }
+
+    article {
+        padding: 1%;
+    }
+
+    h1 {
+        font-size: 30pt;
+    }
+
+    .radio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+        padding-top: 2%;
+        padding-bottom: 5%;
+        padding-left: 20%;
+    }
+
+    .test1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20%;
+        margin-right: 3%;
+    }
+
+    .test {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+</style>
+
+<body>
+    <header>
+        <img src="img/logo_Interreg.png" alt="Logo_Interreg" id="logoInterreg">
+        <img src="img/Logo SMI couleur.png" alt="Logo_SMI" id="logoSMI">
+        <select name="langue" id="langue_base">
+            <option value="fr">Francais</option>
+            <option value="ang">Anglais</option>
+            <option value="all">Allemand</option>
+        </select>
+    </header>
+    <div class="general">
+        <H1>Créez votre compte</H1>
+        <article>
+            <p>E-Mail :</p>
+            <input type="texte" class="Ecrire" id="text1">
+        </article>
+        <article>
+            <p>Mots de passe :</p>
+            <input type="password" class="Ecrire" id="text2">
+        </article>
+        <article>
+            <p>Répéter votre mots de passe :</p>
+            <input type="password" class="Ecrire" id="text3">
+        </article>
+        <article>
+            <p>Numéro de téléphone :</p>
+            <input type="texte" class="Ecrire" id="text4">
+        </article>
+
+        <h1>Votre foyer</h1>
+        <article>
+            <p>Habitation :</p>
+            <div class="radio">
+                <input type="radio" id="app" name="Apparetement" value="huey">
+                <label for="Apparetement">Apparetement</label>
+                <input type="radio" id="mais" name="Maison" value="huey">
+                <label for="Maison">Maison</label>
+            </div>
+        </article>
+        <article>
+            <p>Surfaces en m² :</p>
+            <input type="texte" class="Ecrire" id="text6">
+        </article>
+        <article>
+            <p>Code postale :</p>
+            <input type="texte" class="Ecrire" id="text7">
+        </article>
+        <article>
+            <p>Mode de chauffage :</p>
+            <div class="radio">
+                <div class="test1">
+                    <input type="radio" id="elec" name="Electrique" value="huey">
+                    <label for="Apparetement">Electrique</label>
+                </div>
+                <div class="test">
+                    <input type="radio" id="gaz" name="Gaz" value="huey">
+                    <label for="Maison">Gaz</label>
+                </div>
+                <div class="test">
+                    <input type="radio" id="fioul" name="fioul" value="huey">
+                    <label for="fioul">Fioul</label>
+                </div>
+                <div class="test">
+                    <input type="radio" id="mais" name="Maison" value="huey">
+                    <label for="Maison">Maison</label>
+                </div>
+            </div>
+        </article>
+        <article>
+            <p>Mode de cuisson :</p>
+            <div class="radio">
+                <div class="test1">
+                    <input type="radio" id="app" name="Apparetement" value="huey">
+                    <label for="Apparetement">Apparetement</label>
+                </div>
+                <div class="test">
+                    <input type="radio" id="mais" name="Maison" value="huey">
+                    <label for="Maison">Maison</label>
+                </div>
+
+
+            </div>
+        </article>
+        <article>
+            <p>Producteur d'eau :</p>
+            <div class="radio">
+                <input type="radio" id="app" name="Apparetement" value="huey">
+                <label for="Apparetement">Apparetement</label>
+                <input type="radio" id="mais" name="Maison" value="huey">
+                <label for="Maison">Maison</label>
+            </div>
+        </article>
+        <article>
+            <p>Nombre d'habitants</p>
+            <p>Adultes :</p>
+            <input type="texte" class="Ecrire" id="text11">
+            <p>Ado :</p>
+            <input type="texte" class="Ecrire" id="text12">
+            <p>Enfants :</p>
+            <input type="texte" class="Ecrire" id="text13">
+        </article>
+        <div class="information">
+            <artcile class="btn">
+                <input type="checkbox" id="INFO" name="donnee">
+                <label for="scales">J'accepte de Partager mes données de manièretotalement anonyme données de manière
+                    totalement anonyme</label>
+            </artcile>
+            <artcile class="btn">
+                <input type="checkbox" id="INFO" name="donnee">
+                <label for="scales">Je ne souhaite pas partager mes données </label>
+            </artcile>
+
+        </div>
+        <input type="button" value="Valider" class="valider" onclick="goConso()">
+
+
+    </div>
+    <script>
+        function goConso()
+        {
+         document.location.href="decouverte.html";
+        }
+    </script>
+</body>
+
+</html>
